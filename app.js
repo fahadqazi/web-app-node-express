@@ -4,6 +4,8 @@ var app = express();
 
 var port = 5000; 
 
+//sets up middleware
+//used by express first, before it does anything else
 app.use(express.static('public'));
 app.use(express.static('src/views'))
 
